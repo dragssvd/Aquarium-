@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+
+
+
+<html>
+<head>
+<style>
+
+.boxmodel_container{position:relative;padding:30px;width:50%;margin:0 auto;border:5px solid pink;margin-bottom:20px;overflow:auto;}
+.boxmodel_container .el1{position:relative;width:33.333%;padding:20px;border:1px solid green;box-sizing:border-box;float:left;}
+
+.flexmodel_container{position:relative;margin:0 auto;margin-bottom:20px;border:5px solid pink;padding:30px;width:50%;display:flex;flex-direction:row;}
+.flexmodel_container .el2{width:33.333%;padding:20px;border:1px solid green;}
+
+.flexmodel_container2{position:relative;margin:0 auto;border:5px solid pink;padding:30px;width:50%;display:flex;flex-direction:row;justify-content:space-between;}
+.flexmodel_container2 .el2{width:10%;padding:20px;border:1px solid green;text-align:center;}
+
+.flexmodel_container3{position:relative;margin:0 auto;margin-top:20px;border:5px solid pink;padding:30px;width:50%;display:flex;flex-direction:row;gap:20px;}
+.flexmodel_container3 .el_a{width:30%;padding:20px;border:1px solid green;background-color:green;height:200px;}
+.flexmodel_container3 .el_b{width:30%;padding:20px;border:1px solid green;background-color:blue;}
+.flexmodel_container3 .el_a{order:1;}
+.flexmodel_container3 .el_b{order:2;}
+
+.flexmodel_container3 div:hover{background-color:red}
+</style>
+
+</head>
+<body>
+<section class="boxmodel_container">
+<div class="el1">PART1</div>
+<div class="el1">PART2</div>
+<div class="el1">PART3</div>
+</section>
+
+<section class="flexmodel_container">
+<div class="el2">PART1</div>
+<div class="el2">PART2</div>
+<div class="el2">PART3</div>
+</section>
+
+<section class="flexmodel_container2">
+<div class="el2">PART1</div>
+<div class="el2">PART2</div>
+<div class="el2">PART3</div>
+</section>
+
+
+<section class="flexmodel_container3">
+<div class="el_a">PART1 a<br/>PART1</br>PART1 last</div>
+<div class="el_b">PART1 b<br/>PART1</br>PART1</div>
+<div class="el_a">PART2 a</div>
+<div class="el_b">PART2 b</div>
+
+</section>
+
+</body>
